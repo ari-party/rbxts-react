@@ -2,7 +2,6 @@
   "name": "vide-template",
   "scripts": {
     "build": "rbxtsc",
-    "build:rbxm": "rojo build -o plugin.rbxm",
     "watch": "npm run build -- -w",
     "format": "prettier -w .",
     "lint": "eslint ."
@@ -25,7 +24,6 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
-    "@rbxts/services": "^1.5.4",
     "@rbxts/vide": "^0.4.1"
   }
 }
