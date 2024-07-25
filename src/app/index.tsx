@@ -6,6 +6,6 @@ export default class App {
   }
 
   constructor(parent: Instance) {
-    mount(this.render, parent);
+    mount(() => this.render(), parent);
   }
 }
