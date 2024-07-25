@@ -14,12 +14,12 @@
     "moduleDetection": "force",
     "strict": true,
     "target": "ESNext",
-    "typeRoots": ["node_modules/@rbxts"],
+    "typeRoots": ["node_modules/@rbxts", "node_modules/@grand-hawk"],
 
     "rootDir": "src",
     "outDir": "dist",
     "baseUrl": "src",
-    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo",
     "incremental": true
   }
 }

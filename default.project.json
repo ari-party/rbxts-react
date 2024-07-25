@@ -1,0 +1,27 @@
+{
+  "name": "vide-template",
+  "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+  "tree": {
+    "$className": "DataModel",
+
+    "Workspace": {
+      "grand-hawk-ui-components": {
+        "$path": "dist",
+
+        "include": {
+          "$path": "include",
+
+          "node_modules": {
+            "@rbxts": {
+              "$path": "node_modules/@rbxts"
+            },
+
+            "@grand-hawk": {
+              "$path": "node_modules/@grand-hawk"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "vide-template",
   "scripts": {
-    "build": "rbxtsc",
+    "build": "rbxtsc --type model",
     "watch": "npm run build -- -w",
     "format": "prettier -w .",
     "lint": "eslint ."
@@ -24,6 +24,7 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@grand-hawk/ui-components": "^0.1.1",
     "@rbxts/vide": "^0.4.1"
   }
 }

@@ -16,3 +16,4 @@ package-lock.json
 # production
 dist
 include
+sourcemap.json
