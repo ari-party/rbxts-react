@@ -1,7 +1,7 @@
 {
   "name": "rbxts-react",
   "scripts": {
-    "build": "rbxtsc --type model",
+    "build": "rbxtsc",
     "watch": "npm run build -- -w",
     "format": "prettier -w .",
     "lint": "eslint ."

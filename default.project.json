@@ -1,34 +1,29 @@
 {
-  "name": "rbxts-react",
+  "name": "template",
   "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
   "tree": {
     "$className": "DataModel",
 
     "ReplicatedStorage": {
-      "roblox-ts": {
-        "$className": "Folder",
+      "template": {
+        "$path": "include",
 
-        "rbxts-react": {
-          "$path": "include",
+        "node_modules": {
+          "$className": "Folder",
 
-          "node_modules": {
-            "$className": "Folder",
+          "@rbxts": {
+            "$path": "node_modules/@rbxts"
+          },
 
-            "@rbxts": {
-              "$path": "node_modules/@rbxts"
-            },
-
-            "@grand-hawk": {
-              "$path": "node_modules/@grand-hawk"
-            }
+          "@grand-hawk": {
+            "$path": "node_modules/@grand-hawk"
           }
         }
       }
     },
 
     "StarterGui": {
-      "rbxts-react": {
-        "$className": "Folder",
+      "template": {
         "$path": "dist"
       }
     }
