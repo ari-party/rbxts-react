@@ -1,17 +1,19 @@
 {
-  "name": "vide-template",
+  "name": "rbxts-react",
   "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
   "tree": {
     "$className": "DataModel",
 
-    "Workspace": {
-      "grand-hawk-ui-components": {
-        "$path": "dist",
+    "ReplicatedStorage": {
+      "roblox-ts": {
+        "$className": "Folder",
 
-        "include": {
+        "rbxts-react": {
           "$path": "include",
 
           "node_modules": {
+            "$className": "Folder",
+
             "@rbxts": {
               "$path": "node_modules/@rbxts"
             },
@@ -21,6 +23,13 @@
             }
           }
         }
+      }
+    },
+
+    "StarterGui": {
+      "rbxts-react": {
+        "$className": "Folder",
+        "$path": "dist"
       }
     }
   }

@@ -1,12 +1,20 @@
 import { Sheet } from '@grand-hawk/ui-components';
-import Vide, { mount } from '@rbxts/vide';
+import React from '@rbxts/react';
+import { createPortal } from '@rbxts/react-roblox';
+import { Players } from '@rbxts/services';
+
+import type ReactRoblox from '@rbxts/react-roblox';
+
+const playerGui = Players.LocalPlayer.FindFirstChild('PlayerGui') as PlayerGui;
 
 export default class App {
   render() {
     return <Sheet Size={new UDim2(0, 150, 0, 150)} />;
   }
 
-  constructor(parent: Instance) {
-    mount(() => this.render(), parent);
+  constructor(root: ReactRoblox.Root) {
+    const rendered = this.render();
+
+    root.render(createPortal(rendered, playerGui));
   }
 }
